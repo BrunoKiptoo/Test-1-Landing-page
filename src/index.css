@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  animation: rotate 20s infinite linear;
+}
+
+.cube-container {
+  left: 0;
+  right: auto;
+}
+
+.side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.front {
+  background-color: blue;
+  transform: translateZ(100px);
+}
+
+.back {
+  background-color: green;
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+  background-color: red;
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+  background-color: yellow;
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  background-color: orange;
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  background-color: purple;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.cube-container-moved .cube {
+  transform: rotateY(-90deg);
+}
+
+.cube-container-moved .side {
+  transition: transform 0.5s ease;
+}
+
+.cube-container-moved .side.front {
+  transform: translateZ(150px);
+}
+
+.cube-container-moved .side.back {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+.cube-container-moved .side.right {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.cube-container-moved .side.left {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.cube-container-moved .side.top {
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.cube-container-moved .side.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+.curved-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.modal-open .curved-modal {
+  transform: translateZ(0) rotateY(30deg) rotateX(-15deg);
+  opacity: 1;
+}
+
+.cube-container-moved .curved-modal {
+  transform: translateZ(0) rotateY(30deg) rotateX(-15deg) scale(1.2);
+  opacity: 1;
+}
+
+.curved-modal {
+  position: relative;
+  width: 500px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  background-color: white; /* Adjust the background color as needed */
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  transform: translateZ(-400px) rotateY(0deg) rotateX(0deg);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  backface-visibility: hidden;
+  transform-origin: center center;
+}
