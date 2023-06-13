@@ -5,16 +5,23 @@
 .cube {
   width: 200px;
   height: 200px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform-style: preserve-3d;
-  transform: rotateX(0deg) rotateY(0deg);
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
   animation: rotate 20s infinite linear;
 }
 
 .cube-container {
-  left: 0;
-  right: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 150px; /* Adjust the padding value as needed */
+  box-sizing: border-box;
 }
+
+
 
 .side {
   position: absolute;
@@ -103,29 +110,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 1000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
 }
-
-.modal-open .curved-modal {
-  transform: translateZ(0) rotateY(30deg) rotateX(-15deg);
-  opacity: 1;
-}
-
-.cube-container-moved .curved-modal {
-  transform: translateZ(0) rotateY(30deg) rotateX(-15deg) scale(1.2);
-  opacity: 1;
-}
-
 .curved-modal {
-  position: relative;
-  width: 500px; /* Adjust the width as needed */
-  height: 300px; /* Adjust the height as needed */
-  background-color: white; /* Adjust the background color as needed */
-  border-radius: 20px;
+  background-color: #212121;
+  border-radius: 60px 60px -80px -80px; /* Use larger negative values for the top-left and top-right corners */
+  width: 700px; /* Set the desired width */
+  height: 400px; /* Set the desired height */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
-  transform: translateZ(-400px) rotateY(0deg) rotateX(0deg);
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  backface-visibility: hidden;
-  transform-origin: center center;
+  perspective: 1000px; /* Adjust the perspective value as needed */
 }
+
+.curved-modal h1 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  transform: translateZ(50px); /* Adjust the translation value as needed */
+}
+
+.exit-button {
+  background: linear-gradient(180deg, #ffffff 0%, #f2f2f2 100%);
+  color: #333333;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+

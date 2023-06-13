@@ -1,7 +1,5 @@
 
 
-
-
 import React, { useState } from 'react';
 
 function Cube() {
@@ -20,8 +18,7 @@ function Cube() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div
-        className={`cube-container ${isModalOpen ? 'cube-container-moved' : ''} absolute inset-0 transition-transform duration-300`}
+      <div className={`cube-container ${isModalOpen ? 'cube-container-moved' : ''} absolute inset-0 transition-transform duration-300`}
       >
         <div className="cube">
           <div
@@ -80,3 +77,7 @@ function Cube() {
 
 export default Cube;
 
+
+
+
+       
