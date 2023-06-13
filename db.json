@@ -1,0 +1,49 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "yearJoined": 2020,
+      "membershipType": "Senior",
+      "isActive": true,
+      "creditBalance": 500,
+      "photo": "john-doe.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "yearJoined": 2021,
+      "membershipType": "Junior",
+      "isActive": true,
+      "creditBalance": 200,
+      "photo": "jane-smith.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "yearJoined": 2019,
+      "membershipType": "Senior",
+      "isActive": true,
+      "creditBalance": 800,
+      "photo": "michael-johnson.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "yearJoined": 2022,
+      "membershipType": "Junior",
+      "isActive": true,
+      "creditBalance": 350,
+      "photo": "emily-davis.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Robert Wilson",
+      "yearJoined": 2018,
+      "membershipType": "Senior",
+      "isActive": true,
+      "creditBalance": 1200,
+      "photo": "robert-wilson.jpg"
+    }
+  ]
+}

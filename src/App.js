@@ -5,7 +5,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Cube from './components/Cube';
 import LandingPage from './components/LandingPage';
-import Page1 from './components/Page1';
+import MembersModal from './components/MembersModal';
 import Page2 from './components/Page2';
 import Page3 from './components/Page3';
 import Page4 from './components/Page4';
@@ -21,7 +21,7 @@ function App() {
       {/* <CurvedBox /> */}
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/page1" element={<Page1 />} />
+      <Route path="/page1" element={<MembersModal />} />
       <Route path="/page2" element={<Page2 />} />
       <Route path="/page3" element={<Page3 />} />
       <Route path="/page4" element={<Page4 />} />
