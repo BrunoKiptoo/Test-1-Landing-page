@@ -7,7 +7,7 @@
       "membershipType": "Senior",
       "isActive": true,
       "creditBalance": 500,
-      "photo": "john-doe.jpg"
+      "photo": "https://global-uploads.webflow.com/60b937e8db64d7516e44050d/62b15ed52bf55651ac7733bb_maasai-woman-d.jpg"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "membershipType": "Junior",
       "isActive": true,
       "creditBalance": 200,
-      "photo": "jane-smith.jpg"
+      "photo": "https://img.freepik.com/free-photo/beautiful-african-woman-face-portrait-close-up_53876-148041.jpg"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "membershipType": "Senior",
       "isActive": true,
       "creditBalance": 800,
-      "photo": "michael-johnson.jpg"
+      "photo": "https://static01.nyt.com/images/2013/01/03/world/africa/03chad2/03chad2-superJumbo.jpg"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "membershipType": "Junior",
       "isActive": true,
       "creditBalance": 350,
-      "photo": "emily-davis.jpg"
+      "photo": "https://jrs.net/wp-content/uploads/2021/07/24June_RefugeeKids_JO3-1920x1280-1-e1625647384947.jpg"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "membershipType": "Senior",
       "isActive": true,
       "creditBalance": 1200,
-      "photo": "robert-wilson.jpg"
+      "photo": "https://www.thesouthafrican.com/wp-content/uploads/2021/04/Screenshot-2021-04-12-at-17.51.37.png"
     }
   ]
 }
