@@ -107,7 +107,7 @@ const MembersModal = ({ closeModal }) => {
           <img
             src={filteredMembers[currentMemberIndex]?.photo}
             alt={filteredMembers[currentMemberIndex]?.name}
-            className="w-full h-60 object-cover rounded-t-lg"
+            className="w-full h-60 object-cover rounded-t-lg mt-4"
           />
           <div className="absolute top-2 right-2 bg-white bg-opacity-75 rounded-full p-1">
             <button
