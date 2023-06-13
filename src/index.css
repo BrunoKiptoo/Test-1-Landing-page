@@ -36,34 +36,35 @@
 }
 
 .front {
-  background-color: blue;
+  background-color: #0D47A1; /* Dark Blue */
   transform: translateZ(100px);
 }
 
 .back {
-  background-color: green;
+  background-color: #00695C; /* Dark Green */
   transform: rotateY(180deg) translateZ(100px);
 }
 
 .right {
-  background-color: red;
+  background-color: #B71C1C; /* Dark Red */
   transform: rotateY(90deg) translateZ(100px);
 }
 
 .left {
-  background-color: yellow;
+  background-color: #FFB300; /* Amber */
   transform: rotateY(-90deg) translateZ(100px);
 }
 
 .top {
-  background-color: orange;
+  background-color: #FF6F00; /* Orange */
   transform: rotateX(90deg) translateZ(100px);
 }
 
 .bottom {
-  background-color: purple;
+  background-color: #4A148C; /* Dark Purple */
   transform: rotateX(-90deg) translateZ(100px);
 }
+
 
 @keyframes rotate {
   from {

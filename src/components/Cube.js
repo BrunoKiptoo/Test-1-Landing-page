@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 
 function Cube() {
@@ -18,50 +16,49 @@ function Cube() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className={`cube-container ${isModalOpen ? 'cube-container-moved' : ''} absolute inset-0 transition-transform duration-300`}
-      >
+      <div className={`cube-container ${isModalOpen ? 'cube-container-moved' : ''} absolute inset-0 transition-transform duration-300`}>
         <div className="cube">
           <div
-            className="side front bg-black text-white rounded-md cursor-pointer"
-            onClick={() => handlePageClick('Page 1')}
+            className="side front bg-blue-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Members')}
           >
-            Page 1
+            Members
           </div>
           <div
-            className="side back bg-black text-white rounded-md cursor-pointer"
-            onClick={() => handlePageClick('Page 2')}
+            className="side back bg-green-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Swimming Pool')}
           >
-            Page 2
+            Swimming Pool
           </div>
           <div
-            className="side right bg-black text-white rounded-md cursor-pointer"
-            onClick={() => handlePageClick('Page 3')}
+            className="side right bg-purple-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Tennis Courts')}
           >
-            Page 3
+            Tennis Courts
           </div>
           <div
-            className="side left bg-black text-white rounded-md cursor-pointer"
-            onClick={() => handlePageClick('Page 4')}
+            className="side left bg-pink-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Fitness Center')}
           >
-            Page 4
+            Fitness Center
           </div>
           <div
-            className="side top bg-black text-white rounded-md cursor-pointer"
-            onClick={() => handlePageClick('Page 5')}
+            className="side top bg-yellow-500 text-black rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Restaurant')}
           >
-            Page 5
+            Restaurant
           </div>
           <div
-            className="side bottom bg-black text-white rounded-md cursor-pointer"
-            onClick={() => handlePageClick('Page 6')}
+            className="side bottom bg-red-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Events')}
           >
-            Page 6
+            Events
           </div>
         </div>
 
         {selectedPage && (
           <div className={`curved-screen ${isModalOpen ? 'modal-open' : ''} fixed inset-0 flex justify-center items-center bg-black bg-opacity-50`}>
-            <div className="curved-modal bg-black text-white rounded-lg p-8">
+            <div className="curved-modal bg-white text-black rounded-lg p-8">
               <h1 className="text-3xl mb-4">{selectedPage}</h1>
               {/* Add your page content and design here */}
               <button className="exit-button" onClick={closeModal}>
@@ -76,8 +73,3 @@ function Cube() {
 }
 
 export default Cube;
-
-
-
-
-       
