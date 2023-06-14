@@ -102,6 +102,37 @@ function Cube() {
             Members
           </div>
           {/* ...other sides of the cube */}
+          <div
+            className="side back bg-green-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Swimming Pool')}
+          >
+            Swimming Pool
+          </div>
+          <div
+            className="side right bg-purple-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Tennis Courts')}
+          >
+            Tennis Courts
+          </div>
+          <div
+            className="side left bg-pink-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Fitness Center')}
+          >
+            Fitness Center
+          </div>
+          <div
+            className="side top bg-yellow-500 text-black rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Restaurant')}
+          >
+            Restaurant
+          </div>
+          <div
+            className="side bottom bg-red-500 text-white rounded-md cursor-pointer"
+            onClick={() => handlePageClick('Events')}
+          >
+            Events
+          </div>
+
         </div>
 
         {selectedPage === 'Members' && (

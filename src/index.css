@@ -107,31 +107,31 @@
   transform: rotateX(-90deg) translateZ(150px);
 }
 
-.curved-screen {
+/* .curved-screen {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   z-index: 10;
-}
-.curved-modal {
+} */
+/* .curved-modal {
   background-color: #212121;
-  border-radius: 60px 60px -80px -80px; /* Use larger negative values for the top-left and top-right corners */
-  width: 700px; /* Set the desired width */
-  height: 400px; /* Set the desired height */
+  border-radius: 60px 60px -80px -80px;
+  width: 700px;
+  height: 400px; 
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
-  perspective: 1000px; /* Adjust the perspective value as needed */
+  perspective: 1000px;
 }
 
 .curved-modal h1 {
   color: #ffffff;
   font-size: 24px;
   margin-bottom: 10px;
-  transform: translateZ(50px); /* Adjust the translation value as needed */
+  transform: translateZ(50px); 
 }
 
 .exit-button {
@@ -146,7 +146,6 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
+ */
 
 
