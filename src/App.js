@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Cube from './components/Cube';
 import LandingPage from './components/LandingPage';
 import MembersModal from './components/MembersModal';
-import Page2 from './components/Page2';
+import Page2 from './components/EventsModal';
 import Page3 from './components/Page3';
 import Page4 from './components/Page4';
 import Page5 from './components/Page5';

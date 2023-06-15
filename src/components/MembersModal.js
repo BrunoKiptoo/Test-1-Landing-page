@@ -414,7 +414,7 @@ const MembersModal = ({ closeModal }) => {
   useEffect(() => {
     const fetchMembers = async () => {
       try {
-        const response = await fetch('http://localhost:3000/members');
+        const response = await fetch('http://localhost:3000/users');
         const data = await response.json();
         setMembers(data);
       } catch (error) {

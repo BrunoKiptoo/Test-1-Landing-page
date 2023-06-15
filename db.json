@@ -1,5 +1,8 @@
+
+
 {
-  "members": [
+
+  "users": [
     {
       "id": 1,
       "name": "John Doe",
@@ -7,7 +10,9 @@
       "membershipType": "Senior",
       "isActive": true,
       "creditBalance": 500,
-      "photo": "https://global-uploads.webflow.com/60b937e8db64d7516e44050d/62b15ed52bf55651ac7733bb_maasai-woman-d.jpg"
+      "photo": "https://global-uploads.webflow.com/60b937e8db64d7516e44050d/62b15ed52bf55651ac7733bb_maasai-woman-d.jpg",
+      "eventsCreated": ["event1", "event2"],
+      "eventsAttending": ["event1", "event3"]
     },
     {
       "id": 2,
@@ -16,7 +21,9 @@
       "membershipType": "Junior",
       "isActive": true,
       "creditBalance": 200,
-      "photo": "https://img.freepik.com/free-photo/beautiful-african-woman-face-portrait-close-up_53876-148041.jpg"
+      "photo": "https://img.freepik.com/free-photo/beautiful-african-woman-face-portrait-close-up_53876-148041.jpg",
+      "eventsCreated": ["event3"],
+      "eventsAttending": ["event2", "event3"]
     },
     {
       "id": 3,
@@ -45,5 +52,44 @@
       "creditBalance": 1200,
       "photo": "https://www.thesouthafrican.com/wp-content/uploads/2021/04/Screenshot-2021-04-12-at-17.51.37.png"
     }
+  ],
+  "events": [
+    {
+      "id": "event1",
+      "title": "Birthday Party",
+      "description": "Join me for my birthday celebration!",
+      "date": "2023-06-20",
+      "location": "123 Main St",
+      "host": 1,
+      "attendees": [1]
+    },
+    {
+      "id": "event2",
+      "title": "Movie Night",
+      "description": "Let's watch a movie together!",
+      "date": "2023-06-25",
+      "location": "456 Elm St",
+      "host": 1,
+      "attendees": [1, 2]
+    },
+    {
+      "id": "event3",
+      "title": "BBQ Party",
+      "description": "Come enjoy a BBQ feast with us!",
+      "date": "2023-07-01",
+      "location": "789 Oak St",
+      "host": 2,
+      "attendees": [1, 2]
+    }
   ]
 }
+
+
+
+
+
+ 
+
+
+
+
